@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+:root
+{
+	--dark001: #494852;
+	--dark002:#555460;
+	--light001:#fbfbfb;
+	--red:#f73a35;
+	--something: #f2f2f2;
+	--yellow: #fbfb15;
+	--space20: 20px;
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+
+	font-family: Helvetica, Verdana, sans-serif;
+	
+}
+
+
+body{
+line-height: 1.5;
+overflow: hidden; /** why you dont work, or do you?? !**/
+overflow-y: scroll;
+scroll-behavior: smooth; 
+position: relative;
+height: 100%;
+margin: 0;
+padding: 0;
+color: white;
+background-color: gray;
+}
+ /**VIDEO**/
+ .video
+ {
+ margin: 0 ;
+ 
+
+	width: 100%    !important;
+	height: auto   !important;
+  }
+  }
+ 
+/** NAV BAR**/
+
+li,a,button
+{
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	list-style-image: url ('1.png');
+}
+
+li a {
+	text-decoration: none;
+	color:var(--dark001);
+	display: grid;
+	width: 250px;	   
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
+text-align: center;}
+	
+li a:hover {
+	font-size: 20px;
+	background: rgba(65, 65, 65, 0.8);
+	cursor:pointer;}
+
+header
+{
+	text-align: center;
+	padding: 30px 10%;
+}
+.logo
+{
+	cursor: pointer;
+}
+.nav_links
+{
+	list-style: none;
+	
+}
+
+.nav_links li
+{
+display: inline-block;
+
+}
+
+.nav_links li a
+{
+	transition:all 0.3s ease 0s;
+	
+}
+.nav_links li a:hover
+{
+	color: #0088a9;
+}
+button
+{
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	color: var(--light001);
+	transition:all 0.3s ease 0s;
+}
+button:hover
+{
+	background-color: rgba(65, 65, 65, 0.8);
+}
+
+ /**index**/
+ .INDEX
+{
+	background-size: cover;
+	background-position: center;
+	background-image: url("bg2.png");
+	height:100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	position: relative;;
+	color: white;
+	background-color:inherit;
+	}
+
+
+
+ 
+/** Haarlem**/
+.HaarlemMAIN
+{
+	background-size: cover;
+	background-position: center;
+	background-image: url("bg3.png");
+	height:100%;
+	width:100%;
+	margin:auto;
+	background-image: url("bg4.png");
+	
+	display:table;
+	top: 0;
+	background-size: cover;
+	resize: both;
+  overflow: auto;
+  }
+
+
+  
+figure img {
+    width:20%; 
+	height: auto;
+	align-self: center;
+}
+
+
+/** tbh idk **/
+
+body li
+{list-style: none; }
+
+h5
+{
+	font-size: 20px;
+}
+
+h2,h3,h4
+{
+	text-align: center;
+	padding: 1rem;
+	font-size: 20px;
+}
+
+h1,h6
+{	
+	font-size: 2rem;
+	text-align: center
+}
+
+img.Haarlem1
+{
+	display:block;
+	width:40%;
+	height:auto;
+	
+}
+
+/** Haarlem center boi!! **/
+section.HaarlemCenter
+{
+	height:100%;
+	width:100%;
+	margin:auto;
+	background-image: url('bg4.png');
+	
+	display:table;
+	top: 0;
+	background-size: cover;
+	resize: both;
+  overflow: auto;
+}
+
+ul.Center
+{
+	resize: both;
+  overflow: auto;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-auto-rows: minmax(150px, auto);
+	grid-gap: 1em;
+}
+/** Sports **/
+section.Sports
+{
+	background-image: url('bg2.png');
+}
+
+.crop {
+	height: 250px;
+	width: 300px;
+	overflow: hidden;
+   }
+   .crop img {
+	height: auto;
+	width: 50px;
+   }
+ul.ya 
+{
+
+	display: flex;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	grid-auto-rows: minmax(250px, auto);
+	grid-gap: 1em;
+}
+ul.ya p
+{
+	padding: 9px;
+	flex: 0 32%;
+	height: 100px;
+	margin-bottom: 2%;
+	font: 200 12px/1.5 Helvetica, Verdana, sans-serif;
+	text-align: left;;
+}
+
+ul.ya li
+{ 
+	padding: 10px;
+	overflow: auto;
+}
+ul.ya li a
+{ 
+	color:white;
+}
+
+ul.ya li img
+{
+float: left;
+margin: 10px;
+}
+
+/** CONTACT **/
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid var(--light001); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  
+  input[type=submit] {
+    background-color: rgba(0,136,169,1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+	cursor: pointer;
+	
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: rgba(65, 65, 65, 0.8);
+  }
+  
+  
+  section.contact {
+    border-radius: 5px;
+    background-color: gray;
+    padding: 20px;
+  }
+  /** refe **/
+  ul.REFER
+  {word-spacing: 0.5;
+	display: flex;
+ text-align: center;
+ flex-wrap: wrap;;
+	z-index: 1;
+  }
